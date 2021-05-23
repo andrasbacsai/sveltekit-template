@@ -2,6 +2,7 @@
 
 - TailwindCSS (canary)
 - Node adapter
+- Guarded endpoints / pages
 
 # Usage
 
