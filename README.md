@@ -1,5 +1,9 @@
 # SvelteKit template
 
+# About
+https://andrasbacsai.com/ssr-authentication-guide-for-sveltekit
+
+# Includes
 - TailwindCSS (canary)
 - Node adapter
 - Guarded endpoints / pages
