@@ -1,0 +1,1 @@
+This is protected page. Only logged in users will see it.
