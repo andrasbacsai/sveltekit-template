@@ -10,14 +10,14 @@ function verifyToken(token) {
 
 }
 
-export async function handle({ request, render }) {
+export async function handle({ request, resolve }) {
 	const { token } = cookie.parse(request.headers.cookie || '');
 	if (token) {
 		request.locals.isLoggedIn = verifyToken(token)
 	} else {
 		request.locals.isLoggedIn = false
 	}
-	const response = await render(request);
+	const response = await resolve(request);
 	if (!request.locals.isLoggedIn && !publicPages.includes(request.path)) {
 		return {
 			status: 301,
